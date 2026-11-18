@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" width="960" height="420" role="img" aria-labelledby="t d" font-family="DM Sans, -apple-system, Segoe UI, sans-serif">
+  <title id="t">JIOS architecture: acquisition, intelligence, surfaces</title>
+  <desc id="d">Three layers. Acquisition in n8n on a VPS collects postings from job boards, LinkedIn, Amazon and a daily agent. The Foundation in Python applies deterministic rules, asks a small model to read requirements and fit, groups identities and learns from decisions. Surfaces: a private web platform, mail digests, a public demo with synthetic data, and a public feed for her site.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#202126"/></marker>
+    <style>
+      .lbl{font-size:12px;letter-spacing:.06em;text-transform:uppercase;fill:#686D76;font-weight:600}
+      .h{font-size:16px;font-weight:700;fill:#15171B}
+      .t{font-size:13px;fill:#15171B}
+      .s{font-size:11.5px;fill:#686D76}
+      .box{fill:#fff;stroke:#E6E4E2;stroke-width:1.2;rx:12}
+      .col{fill:#FBF8F2;stroke:#E6E4E2;stroke-width:1;rx:18}
+      .pill{fill:#EEF4EF;rx:10}
+      .pt{font-size:11.5px;fill:#202126;font-weight:600}
+      .arrow{stroke:#202126;stroke-width:2;fill:none;marker-end:url(#a)}
+      .dash{stroke-dasharray:5 5}
+    </style>
+  </defs>
+  <rect width="960" height="420" fill="#ffffff"/>
+
+  <!-- columns -->
+  <rect class="col" x="16" y="16" width="290" height="340"/>
+  <rect class="col" x="335" y="16" width="290" height="340"/>
+  <rect class="col" x="654" y="16" width="290" height="340"/>
+
+  <!-- 1 acquisition -->
+  <text class="lbl" x="36" y="44">01 · Acquisition</text>
+  <text class="h" x="36" y="68">n8n on a VPS</text>
+  <text class="s" x="36" y="88">finds, fetches, traces · no intelligence here</text>
+  <rect class="box" x="36" y="104" width="250" height="40"/><text class="t" x="50" y="129">Trust &amp; Safety job board · sitemap + pages</text>
+  <rect class="box" x="36" y="152" width="250" height="40"/><text class="t" x="50" y="177">Greenhouse · Ashby boards (public APIs)</text>
+  <rect class="box" x="36" y="200" width="250" height="40"/><text class="t" x="50" y="225">LinkedIn guest pages · amazon.jobs</text>
+  <rect class="box" x="36" y="248" width="250" height="40"/><text class="t" x="50" y="273">Daily research agent → Notion → ingest</text>
+  <rect class="pill" x="36" y="304" width="112" height="22"/><text class="pt" x="46" y="319">watch every 15 min</text>
+  <rect class="pill" x="156" y="304" width="130" height="22"/><text class="pt" x="166" y="319">validated export · 3×/day</text>
+
+  <!-- 2 foundation -->
+  <text class="lbl" x="355" y="44">02 · Intelligence</text>
+  <text class="h" x="355" y="68">Foundation · Python</text>
+  <text class="s" x="355" y="88">rules filter · the model reads · nothing decides</text>
+  <rect class="box" x="355" y="104" width="250" height="40"/><text class="t" x="369" y="121">Level 1 · deterministic rules</text><text class="s" x="369" y="136">country · language · salary tier · title family</text>
+  <rect class="box" x="355" y="152" width="250" height="40"/><text class="t" x="369" y="169">Identity · same posting, two sources</text><text class="s" x="369" y="184">one card, both links, no auto-merge</text>
+  <rect class="box" x="355" y="200" width="250" height="40"/><text class="t" x="369" y="217">Model reads · Claude Haiku</text><text class="s" x="369" y="232">requirements · fit 0-100 + 3 quoted reasons</text>
+  <rect class="box" x="355" y="248" width="250" height="40"/><text class="t" x="369" y="265">Learning · hypotheses from her decisions</text><text class="s" x="369" y="280">confirmed → presentation only · rules need a GO</text>
+  <rect class="pill" x="355" y="304" width="100" height="22"/><text class="pt" x="365" y="319">1,800+ tests · CI</text>
+  <rect class="pill" x="463" y="304" width="142" height="22"/><text class="pt" x="473" y="319">every label has a source</text>
+
+  <!-- 3 surfaces -->
+  <text class="lbl" x="674" y="44">03 · Surfaces</text>
+  <text class="h" x="674" y="68">Where a person decides</text>
+  <text class="s" x="674" y="88">no automatic applications, ever</text>
+  <rect class="box" x="674" y="104" width="250" height="40"/><text class="t" x="688" y="121">Private platform · Flask, HTTPS</text><text class="s" x="688" y="136">feed · detail · tailored CV · tracker · Learn</text>
+  <rect class="box" x="674" y="152" width="250" height="40"/><text class="t" x="688" y="169">Mail digests · Gmail via n8n</text><text class="s" x="688" y="184">one mail per run, strong matches first</text>
+  <rect class="box" x="674" y="200" width="250" height="40"/><text class="t" x="688" y="217">Public demo · synthetic data</text><text class="s" x="688" y="232">fictional companies, rebuilt on restart</text>
+  <rect class="box" x="674" y="248" width="250" height="40"/><text class="t" x="688" y="265">Public feed · JSON for her site</text><text class="s" x="688" y="280">today's picks, totals only</text>
+  <rect class="pill" x="674" y="304" width="126" height="22"/><text class="pt" x="684" y="319">second person: «lens»</text>
+  <rect class="pill" x="808" y="304" width="116" height="22"/><text class="pt" x="818" y="319">own criteria, own mail</text>
+
+  <!-- arrows -->
+  <path class="arrow" d="M306 186 L335 186"/>
+  <path class="arrow" d="M625 186 L654 186"/>
+  <!-- feedback: decisions back to learning -->
+  <path class="arrow dash" d="M740 356 C 740 400, 520 400, 500 356" />
+  <text class="s" x="548" y="414">decisions and corrections flow back · nothing changes silently</text>
+</svg>

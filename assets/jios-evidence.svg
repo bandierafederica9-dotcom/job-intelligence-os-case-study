@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" width="960" height="400" role="img" aria-labelledby="t d" font-family="DM Sans, -apple-system, Segoe UI, sans-serif">
+  <title id="t">Every label carries its source</title>
+  <desc id="d">A posting card as shown in JIOS, with each label connected to where it comes from: the posting date from the page's structured data, the priority from a versioned rule, a requirement from the quoted sentence, the fit score from three reasons that cite the text, and the decision from the person. Nothing is inferred silently; a missing date stays missing.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#686D76"/></marker>
+    <style>
+      .h{font-size:15px;font-weight:700;fill:#15171B}
+      .t{font-size:13px;fill:#15171B}
+      .s{font-size:12px;fill:#686D76}
+      .src{font-size:12.5px;fill:#15171B}
+      .srcl{font-size:11px;letter-spacing:.06em;text-transform:uppercase;fill:#202126;font-weight:700}
+      .card{fill:#fff;stroke:#E6E4E2;stroke-width:1.4;rx:16}
+      .chip{rx:9}
+      .ct{font-size:11.5px;font-weight:600}
+      .ln{stroke:#AEB0B8;stroke-width:1.4;fill:none;marker-end:url(#a);stroke-dasharray:3 4}
+      .sbox{fill:#FBF8F2;stroke:#E6E4E2;rx:12}
+    </style>
+  </defs>
+  <rect width="960" height="400" fill="#fff"/>
+
+  <!-- the card (synthetic company) -->
+  <rect class="card" x="40" y="40" width="400" height="300"/>
+  <rect x="60" y="60" width="36" height="36" rx="10" fill="#EEF4EF"/><text x="70" y="85" font-size="14" font-weight="700" fill="#202126">NB</text>
+  <text class="h" x="108" y="76">Integrity Operations Analyst</text>
+  <text class="s" x="108" y="94">Northbeam · Dublin, Ireland · hybrid</text>
+
+  <!-- labels -->
+  <rect class="chip" x="60" y="118" width="80" height="22" fill="#EFF3F5"/><text class="ct" x="70" y="133" fill="#777088">P1-review</text>
+  <rect class="chip" x="150" y="118" width="122" height="22" fill="#F2EFF7"/><text class="ct" x="160" y="133" fill="#15171B">posted 3 days ago</text>
+  <rect class="chip" x="282" y="118" width="54" height="22" fill="#EEF4EF"/><text class="ct" x="292" y="133" fill="#202126">fit 72</text>
+
+  <text class="t" x="60" y="172">Requirement · mandatory</text>
+  <text class="s" x="60" y="190">“3+ years in trust &amp; safety or integrity operations”</text>
+  <rect class="chip" x="60" y="200" width="52" height="20" fill="#EEF4EF"/><text class="ct" x="70" y="214" fill="#202126">MATCH</text>
+
+  <text class="t" x="60" y="248">Why 72</text>
+  <text class="s" x="60" y="266">1. Day-to-day is escalations and policy enforcement.</text>
+  <text class="s" x="60" y="282">2. “…own the QA calibration programme” matches her TikTok work.</text>
+  <text class="s" x="60" y="298">3. On-site Dublin: no location penalty.</text>
+
+  <rect class="chip" x="60" y="312" width="96" height="20" fill="#F7F3EC"/><text class="ct" x="70" y="326" fill="#6B5A2A">✓ selected by her</text>
+
+  <!-- sources, right side -->
+  <text class="srcl" x="520" y="54">Where each label comes from</text>
+
+  <rect class="sbox" x="500" y="66" width="440" height="48"/>
+  <text class="src" x="514" y="86">Posted date · the page's structured data (JSON-LD datePosted)</text>
+  <text class="s" x="514" y="104">No date on the site? The card says “first seen on …”. Never a guess.</text>
+
+  <rect class="sbox" x="500" y="124" width="440" height="48"/>
+  <text class="src" x="514" y="144">Priority · Level 1 rules, version 1.4.3, deterministic</text>
+  <text class="s" x="514" y="162">Same posting, same version, same answer. Rule changes need a GO.</text>
+
+  <rect class="sbox" x="500" y="182" width="440" height="48"/>
+  <text class="src" x="514" y="202">Requirement · the sentence quoted from the posting</text>
+  <text class="s" x="514" y="220">Checked against profile facts with sources. UNKNOWN never rejects.</text>
+
+  <rect class="sbox" x="500" y="240" width="440" height="48"/>
+  <text class="src" x="514" y="260">Fit score · three reasons that must quote the text</text>
+  <text class="s" x="514" y="278">A required language she lacks caps it; years alone never block.</text>
+
+  <rect class="sbox" x="500" y="298" width="440" height="48"/>
+  <text class="src" x="514" y="318">Decision · the person, with a one-tap reason</text>
+  <text class="s" x="514" y="336">Append-only ledger; her decisions are the model's next examples.</text>
+
+  <!-- connectors: from the right edge of each label, routed above / below the chip row -->
+  <path class="ln" d="M272 118 C 330 96, 420 90, 500 90"/>
+  <path class="ln" d="M140 118 C 150 100, 320 148, 500 148"/>
+  <path class="ln" d="M336 186 C 420 186, 460 206, 500 206"/>
+  <path class="ln" d="M336 140 C 400 160, 440 264, 500 264"/>
+  <path class="ln" d="M156 322 C 340 322, 440 322, 500 322"/>
+
+  <text class="s" x="40" y="376">Company and posting shown here are synthetic, as in the public demo.</text>
+</svg>
